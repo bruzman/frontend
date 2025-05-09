@@ -1,0 +1,97 @@
+/* ============================
+    Estilos para la lista de episodios
+============================ */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2.2em;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+  .search-input:focus {
+    border-color: #2980b9;
+  }
+
+.episode-card {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+  .episode-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .episode-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #2980b9;
+  }
+
+  .episode-card p {
+    margin: 5px 0;
+    color: #7f8c8d;
+  }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+
+.error {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2em;
+}
